@@ -39,3 +39,6 @@ and to handle all the annoying meetings that keep getting added to your busy sch
    - View all your meeting arrangements. 
    - Create new meetings. 
    - Delete them all!
+
+* Work
+  - As boss, you are allow to add and remove work from the minions' backlogs. 
