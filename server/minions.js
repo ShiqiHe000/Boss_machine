@@ -1,5 +1,6 @@
 const express = require('express');
 const minionsRouter = express.Router();
+const workRouter = require('./work');
 
 module.exports = minionsRouter;
 
@@ -23,6 +24,9 @@ minionsRouter.param('minionId', (req, res, next, id) => {
         res.status(404).send();
     }
 });
+
+// go to work router
+minionsRouter.use('/:minionId/work', workRouter);
 
 
 // GET /api/minions to get an array of all minions.

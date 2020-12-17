@@ -263,10 +263,28 @@ const deleteAllFromDatabase = (modelType) => {
   return model.data;
 }
 
+const getWorkFromDatabaseById = (id) => {
+  const workArr = getAllFromDatabase('work');
+  if(workArr === null){
+    return null;
+  }
+
+  let workThisId = [];
+  workArr.forEach(work => {
+    if(work.minionId === id){
+      workThisId.push(work);
+    }
+  });
+  
+  return workThisId;
+}
+
+
 module.exports = {
   createMeeting,
   getAllFromDatabase,
   getFromDatabaseById,
+  getWorkFromDatabaseById,
   addToDatabase,
   updateInstanceInDatabase,
   deleteFromDatabasebyId,
