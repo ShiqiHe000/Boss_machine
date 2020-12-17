@@ -42,3 +42,7 @@ and to handle all the annoying meetings that keep getting added to your busy sch
 
 * Work
   - As boss, you are allow to add and remove work from the minions' backlogs. 
+
+![image of boss machine front page](./imgs/page.png)
+
+
